@@ -18,3 +18,14 @@ function isFive(input) {
 		return false;
 	}
 }
+
+function isEven(input){
+	console.log(typeof input)
+	if (typeof input === "boolean"){
+		return false;
+	} else if (input % 2 === 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
