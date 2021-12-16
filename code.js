@@ -1,8 +1,12 @@
 // helloWorld function 
 function helloWorld() {
-    return "Hello, World!";
+	return "Hello, World!";
 }
 
 function sayHello(input) {
-    return "Hello, " + input + "!";
+	if (input === undefined || input === false) {
+		return "Hello, World!"
+	} else {
+		return "Hello, " + input + "!";
+	}
 }
