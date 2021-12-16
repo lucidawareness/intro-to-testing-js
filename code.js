@@ -20,10 +20,17 @@ function isFive(input) {
 }
 
 function isEven(input){
-	console.log(typeof input)
 	if (typeof input === "boolean"){
 		return false;
 	} else if (input % 2 === 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function isVowel(input){
+	if (input === "a" || input === "A" || input === "e" || input === "i" || input === "o" || input === "u" || input === "E" || input === "I" || input === "O" || input === "U" ){
 		return true;
 	} else {
 		return false;
